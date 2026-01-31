@@ -6,7 +6,7 @@ const stkRoutes = require("./routes/stkRoutes");
 
 const app = express();
 
-app.use(express.static(path.join(__dirname, '../../frontend')));
+app.use(express.static(path.join(__dirname, '../../docs')));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cors());
