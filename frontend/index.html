@@ -7,12 +7,12 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <h1>Enter your MPESA number & amount in the field below and click submit</h1>
     <div id="container">
-        <h1>Enter your MPESA number & amount in the field below and click submit</h1>
-        <form action="/submit" method="POST">
-        <input type="text" name="mpesa_number" id="phone" placeholder="0712345678" required>
-        <input type="number" name="amount" id="amount" placeholder="Amount" required><br>
-        <button type="submit" id="submitBtn">Submit</button>
+        <input type="text" name="mpesa_number" id="phone" placeholder="0712345678" >
+        <input type="number" name="amount" id="amount" placeholder="Amount" ><br>
+        <p id="message"></p>
+        <button id="submitBtn">Submit</button>
     </div>
     <script src="index.js"></script>
 </body>
